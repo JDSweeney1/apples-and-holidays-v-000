@@ -61,7 +61,8 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, supply|
       <<-TEXT
       #{season.to_s.capitalize}:
-        #{hoiday.to_s.capitalize}: #{supply[0].capitalize}, #{supply[1].capitalize}
+        #{hoiday.to_s.capitalize}: #{supply.capitalize.join(", ")}
+        TEXT
 end
 
 def all_holidays_with_bbq(holiday_hash)
