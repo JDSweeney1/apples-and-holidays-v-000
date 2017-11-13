@@ -63,6 +63,8 @@ def all_supplies_in_holidays(holiday_hash)
       #{season.to_s.capitalize}:
         #{hoiday.to_s.capitalize}: #{supply.capitalize.join(", ")}
         TEXT
+      end
+    end
 end
 
 def all_holidays_with_bbq(holiday_hash)
